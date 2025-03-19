@@ -9,9 +9,6 @@ import Link from "next/link";
 
 async function Seller() {
   const session = await getServerSession(authOptions);
-  const data = await fetch(`https://${process.env.BASE_URL}api/seller/products/get?sellerId=${session?.user?.id}`);
-  const sellerProducts = (await data.json()).products;
-  const categories = await prisma.category.findMany();
 
   if (!session?.user) {
     return (
@@ -31,6 +28,14 @@ async function Seller() {
       </div>
     );
   }
+
+  const sellerProducts = await prisma.product.findMany({
+    where: {
+      sellerId: session?.user?.id
+    }
+  });
+
+  const categories = await prisma.category.findMany();
 
   return (
     <>
