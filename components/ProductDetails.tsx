@@ -78,7 +78,7 @@ export default function ProductDetails({product, moreProducts}: Readonly<{produc
               <h1 className="text-2xl text-center">REVIEWS</h1>
               <div className="bg-slate-900 rounded-xl p-4">
                 <div className="flex items-center bg-zinc-950 rounded-md p-2 border-2 border-pink-500 text-pink-500 text-xs md:text-base text-center">
-                  Rated {calculateAverageRating()} <span className="pl-2 box-content w-[10px] h-[10px] md:w-[15px] md:h-[15px]"><Image width={15} height={15} src="https://img.icons8.com/color/48/pixel-star.png" alt="pixel-star"/></span>s of {product.Review.length} user reveiews.
+                  Rated {calculateAverageRating()} <span className="pl-2 box-content w-[10px] h-[10px] md:w-[15px] md:h-[15px] hidden md:block"><Image width={15} height={15} src="https://img.icons8.com/color/48/pixel-star.png" alt="pixel-star"/></span>s of {product.Review.length} user reveiews.
                 </div>
                 <div>
                   {
