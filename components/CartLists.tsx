@@ -25,7 +25,7 @@ function CartList() {
   }
 
   return (
-    <div className="absolute right-0 bg-zinc-900 p-2 sm:pl-32 h-screen rounded-r-xl overflow-y-scroll no-scrollbar w-full pb-14 sm:pb-0 sm:pr-12">
+    <div className="absolute right-0 bg-zinc-900 p-2 sm:pl-32 h-[100dvh] rounded-r-xl overflow-y-scroll no-scrollbar w-full pb-14 sm:pb-0 sm:pr-12">
       <button onClick={clearFullCart} disabled={cart == null || cart.length < 1} className="py-2 px-4 bg-red-800 rounded-xl hover:bg-red-600 disabled:bg-zinc-800">Clear Cart</button>
       <h1 className="text-4xl text-center py-5">Your cart is waiting for your attention!</h1>
       <div className="bg-zinc-800 p-5 flex flex-wrap gap-4 rounded-xl mb-5">

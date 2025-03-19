@@ -48,7 +48,7 @@ export default async function Home() {
       <Navbar active="home" />
       <SideBar active={"home"} />
       <AcceptPayment />
-      <div className="absolute right-0 bg-zinc-900 p-2 sm:pl-32 h-screen rounded-r-xl sm:pr-12 overflow-y-scroll no-scrollbar w-full pb-14 sm:pb-0">
+      <div className="absolute right-0 bg-zinc-900 p-2 sm:pl-32 h-[100dvh] rounded-r-xl sm:pr-12 overflow-y-scroll no-scrollbar w-full pb-14 sm:pb-0">
         <h1 className="text-2xl sm:text-4xl text-center py-5">Coolest products found around the world!</h1>
         <ControlBar categories={categories} />
         <Products products={products} totalProducts={totalProducts} />

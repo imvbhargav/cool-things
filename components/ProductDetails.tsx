@@ -31,7 +31,7 @@ export default function ProductDetails({product, moreProducts}: Readonly<{produc
       <SideBar active="none" />
       <AcceptPayment />
       {product ?
-      <div className="sm:pl-28 w-full h-screen bg-slate-900 rounded-xl p-2 sm:p-10 overflow-x-hidden overflow-y-scroll pb-14 sm:pb-0">
+      <div className="sm:pl-28 w-full h-[100dvh] bg-slate-900 rounded-xl p-2 sm:p-10 overflow-x-hidden overflow-y-scroll pb-14 sm:pb-0">
         <div className="flex flex-wrap justify-between gap-4 bg-zinc-950 rounded-xl">
           <div className="flex-1 max-w-full object-contain p-2 flex items-start justify-center">
             {product.image &&

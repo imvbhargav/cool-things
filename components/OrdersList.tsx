@@ -66,7 +66,7 @@ function OrdersList({orderItems}: Readonly<{orderItems: OrderItemExtended[]}>) {
   const deliveredPrice = calculatePriceWithStatus(orders, ['DELIVERED']);
 
   return(
-      <div className="absolute right-0 bg-zinc-900 p-2 sm:pl-32 h-screen rounded-r-xl overflow-y-scroll no-scrollbar w-full pb-14 sm:pb-0 sm:pr-12">
+      <div className="absolute right-0 bg-zinc-900 p-2 sm:pl-32 h-[100dvh] rounded-r-xl overflow-y-scroll no-scrollbar w-full pb-14 sm:pb-0 sm:pr-12">
         <h1 className="text-xl sm:text-4xl text-center py-5">Your orders are here, or maybe with you!</h1>
         <div className="bg-zinc-800 p-5 flex flex-col-reverse lg:flex-row gap-4 rounded-xl mb-5">
           <div className="flex-1 relative">
