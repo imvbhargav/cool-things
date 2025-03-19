@@ -14,8 +14,154 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'VT323';
+}
+
+img {
+  max-width: max-content;
+}
+
+.bg-price {
+  background: linear-gradient(to right, rgb(30, 41, 59) 20%, rgb(24, 24, 27), rgb(30, 41, 59) 80%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Standard */
+}
+
+.fade-in {
+  animation: fadeIn 1s linear forwards;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.space_grotesk {
+  font-family: "Space Grotesk";
+}
+
+.shadow {
+  z-index: 10;
+  bottom: -5px;
+  right: -5px;
+  transition: all 250ms ease-in;
+}
+
+.shadow:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  bottom: -0px;
+  right: -0px;
+  mix-blend-mode: multiply;
+  z-index: 0;
+  transition: all 250ms ease-in;
+}
+
+.shadow:hover {
+  bottom: -0px;
+  right: -0px;
+}
+
+.shadow:hover:before {
+  bottom: -5px;
+  right: -5px;
+}
+
+
+.shimmer {
+  background: linear-gradient(120deg, #303032 25%, #49494b 50%, #303032 75%);
+  background-size: 500% 500%;
+  animation: shimmer 2s linear infinite;
+}
+
+.open {
+  overflow: hidden;
+  scale: 1;
+  animation: open 150ms ease-in forwards;
+}
+
+.close {
+  overflow: hidden;
+  scale: 0;
+  animation: close 150ms ease-in forwards;
+}
+
+.open_blur {
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  animation: open_blur 150ms ease-in forwards;
+}
+
+.close_blur {
+  overflow: hidden;
+  backdrop-filter: blur(0px);
+  animation: close_blur 150ms ease-in forwards;
+}
+
+@keyframes open {
+  from { scale: 0; }
+  to { scale: 1; }
+}
+
+@keyframes close {
+  from { scale: 1; }
+  to { scale: 0; }
+}
+
+@keyframes open_blur {
+  from { backdrop-filter: blur(0px); }
+  to { backdrop-filter: blur(10px); }
+}
+
+@keyframes close_blur {
+  from { backdrop-filter: blur(10px); }
+  to { backdrop-filter: blur(0px); }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
