@@ -65,7 +65,7 @@ function SellerDashboard({sellerProducts, categories}: Readonly<{sellerProducts:
         <div className="w-full relative">
           <p className="text-center">{user?.username}</p>
           <div className="w-full border-2 border-red-500 hover:bg-red-500 transition-colors duration-300 rounded-xl text-center"><Logout /></div>
-          <p className="text-center border border-zinc-800 rounded-xl">
+          <p className="text-center py-2 rounded-xl">
             <a href={`${process.env.BASE_URL}`} className="w-full h-full p-1">Back to Home</a>
           </p>
         </div>
