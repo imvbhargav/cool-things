@@ -5,8 +5,7 @@ import SalesItems from "@/components/SalesItems";
 import SalesInsights from "@/components/SalesInsights";
 import LoginContainer from "@/components/LoginContainer";
 import SalesTabOptions from "@/components/SalesTabOption";
-import { authOptions } from "@/lib/authOptions";import Link from "next/link";
-;
+import { authOptions } from "@/lib/authOptions";
 
 async function Sales() {
 

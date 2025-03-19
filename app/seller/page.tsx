@@ -5,7 +5,6 @@ import LoginContainer from "@/components/LoginContainer";
 import Login from "@/components/Login";
 import SyncSessionWithStore from "@/components/SyncSessionWithStore";
 import prisma from "@/lib/prisma";
-import Link from "next/link";
 
 async function Seller() {
   const session = await getServerSession(authOptions);

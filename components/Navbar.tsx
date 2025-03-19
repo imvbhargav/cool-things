@@ -2,7 +2,6 @@
 
 import { useCartLengthStore } from "@/store/cart";
 import NavBarAuthButton from "./NavBarAuthButton";
-import Link from "next/link";
 import Image from "next/image";
 
 function Navbar({ active }: Readonly<{ active: string }>) {
