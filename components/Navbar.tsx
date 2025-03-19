@@ -15,10 +15,10 @@ function Navbar({ active }: Readonly<{ active: string }>) {
         <ul className="w-full list-none flex gap-2 items-center justify-between">
           <li className={`${active == "home" ? "bg-slate-700" : ""} p-2 rounded-xl w-[50px] flex-1`}>
             <div className="flex flex-col items-center">
-              <Link
+              <a
                 href="/"><Image src={"/home.png"} alt="home" width={25} height={25}
                 style={{width: '25px', height: '25px'}}
-              />Home</Link>
+              />Home</a>
             </div>
           </li>
           <li className={`${active == "cart" ? "bg-slate-700" : ""} p-2 rounded-xl w-[50px] relative flex-1`}>
