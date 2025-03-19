@@ -9,7 +9,7 @@ function SideBar({ active }: Readonly<{ active: string, cartCount?: number }>) {
     <>
       <Login />
       <Profile />
-      <div className="absolute z-10 w-20 hover:w-80 bg-zinc-950 transition-all duration-300 rounded-l-xl py-5 h-screen overflow-hidden hidden sm:flex flex-col justify-between border-r-4 border-slate-800">
+      <div className="absolute z-10 w-20 hover:w-80 bg-zinc-950 transition-all duration-300 rounded-l-xl py-5 h-[100dvh] overflow-hidden hidden sm:flex flex-col justify-between border-r-4 border-slate-800">
         <div>
         <BrandLogo />
         <ul className="list-none mt-16 mx-3">

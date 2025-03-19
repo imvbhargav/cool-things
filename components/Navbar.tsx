@@ -10,7 +10,7 @@ function Navbar({ active }: Readonly<{ active: string }>) {
   const cartlength = useCartLengthStore(state => state.length);
 
   return (
-    <div className="sm:hidden w-full h-screen absolute flex flex-col gap-1 justify-center items-center z-50 pointer-events-none">
+    <div className="sm:hidden w-full h-[100dvh] absolute flex flex-col gap-1 justify-center items-center z-50 pointer-events-none">
       <div className="flex items-center absolute bottom-0 w-full justify-between border-2 border-zinc-800 rounded-t-xl bg-zinc-800 pointer-events-auto px-2">
         <ul className="w-full list-none flex gap-2 items-center justify-between">
           <li className={`${active == "home" ? "bg-slate-700" : ""} p-2 rounded-xl w-[50px] flex-1`}>
