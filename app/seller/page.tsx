@@ -9,7 +9,7 @@ import Link from "next/link";
 
 async function Seller() {
   const session = await getServerSession(authOptions);
-  const data = await fetch(`http://localhost:3000/api/seller/products/get?sellerId=${session?.user?.id}`);
+  const data = await fetch(`https://${process.env.BASE_URL}api/seller/products/get?sellerId=${session?.user?.id}`);
   const sellerProducts = (await data.json()).products;
   const categories = await prisma.category.findMany();
 
