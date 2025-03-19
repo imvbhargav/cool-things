@@ -16,7 +16,7 @@ function Navbar({ active }: Readonly<{ active: string }>) {
           <li className={`${active == "home" ? "bg-slate-700" : ""} p-2 rounded-xl w-[50px] flex-1`}>
             <div className="flex flex-col items-center">
               <a
-                href="/"><Image src={"/home.png"} alt="home" width={25} height={25}
+                href={`${process.env.BASE_URL}`}><Image src={"/home.png"} alt="home" width={25} height={25}
                 style={{width: '25px', height: '25px'}}
               />Home</a>
             </div>

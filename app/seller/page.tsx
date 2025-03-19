@@ -16,7 +16,7 @@ async function Seller() {
         <Login />
         <LoginContainer page="seller page" />
         <div className="fixed top-4 left-4 p-4 bg-blue-500 rounded-xl hover:bg-pink-500 transition-colors duration-300 text-black font-black">
-          <a href="/">GO TO HOME</a>
+          <a href={`${process.env.BASE_URL}`}>GO TO HOME</a>
         </div>
       </>
     );

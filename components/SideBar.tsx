@@ -16,7 +16,7 @@ function SideBar({ active }: Readonly<{ active: string, cartCount?: number }>) {
           <ListItem
             icon={"/home.png"}
             title={"Home"}
-            to={"/"}
+            to={`${process.env.BASE_URL}`}
             active={active == 'home'}
           />
           <ListItem
